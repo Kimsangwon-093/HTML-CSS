@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      ID  : <input type="text" required><br>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="이메일을 입력하세요" required><br>
+      PW  : <input type="password" name="password" id="password" required minlength="8" maxlength="15" placeholder="문자와 숫자 특수문자 포함"><br>
+      패스워드 확인 : <input type="password" name="password" id="password" placeholder="비밀번호 확인" required><br>
+      <select name="signin" id="signin">가입경로
+        <option value="aquaintance">지인</option>
+        <option value="search">검색</option>
+        <option value="ETC">기타</option>
+      </select> 
+      <label for="comment">Memo</label>
+      <textarea id="comment" name="comment" rows="4" cols="30" placeholder="여기에 입력하세요" style="resize: none;"></textarea>
+    </fieldset>
+    <fieldset>
+      <input type="radio" name="choise" id="mail">
+      <label for="mail">메일수신</label>
+      <br>
+      <input type="radio" name="choise" id="Nomail">
+      <label for="Nomail">메일수신안함</label>
+    </fieldset>
+    <button type="signin">가입하기</button>
+    <button type="cancel">취소하기</button>
+  </form>
+</body>
+</html>
