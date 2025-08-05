@@ -3,9 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>sign in</title>
+  <h1>Welcom to sign up</h1>
 </head>
-<body>
-  
-</body>
+  <body>
+    <form>
+      <fieldset>
+        <legend>User Information</legend>
+        
+        <ul>
+          <li>
+            <label for="account">ID</label>
+            <input type="text" name="account" id="account" placeholder="From 4 to 10 characters" required>
+          </li>
+          <li>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email">
+          </li>
+          <li>
+            <label for="password">password</label>
+            <input type="password" name=passwordail" id="password">
+          </li>
+          <li>
+            <label for="passwordChk">check the password</label>
+            <input type="password" name=passwordail" id="passwordChk">
+          </li>
+          <li>
+            <label for="direction">path to signin</label>
+            <select name="direction" id="direction">
+              <option value="etc">etc</option>
+              <option value="suggest">suggestion</option>
+            </select>
+          </li>
+          <li>
+            <legend>memo</legend>
+            <textarea name="memo" id="memo" cols="30" rows="10" placeholder="comment" style="resize: none;"></textarea>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>News and Event</legend>
+        <input type="radio" name="agree-flg" id="agreeFlgTrue" value="1"> 
+        <label for="agreeFlgTrue">receive mail</label>
+        <input type="radio" name="agree-flg" id="agreeFlgFalse" value="0">
+        <label for="agreeFlgFalse">Not receive mail</label>
+      </fieldset>
+      <button type="submit">sign in</button>
+      <button type="reset">cancel</button>
+    </form>
+  <!-- 스네이크 기법 : 단어와 단어 사이에 언더바(_)로 연결, ex : user_email-->
+   <!-- 카멜 기법 : 연결되는 단어의 첫글자를 대문자로 작성, ex userEmail -->
+  </body>
 </html>
