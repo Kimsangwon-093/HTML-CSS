@@ -1,0 +1,31 @@
+.cube_01{
+  border: 1px solid black;
+  width: 120px;
+  height: 130px;
+  margin: 10px;
+  position:relative;
+  left: 20px;
+  top:20px;
+  
+  
+}
+
+.cube_02{
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  position:relative;
+  left:180px;
+  top:-50px;
+}
+
+.cube_03{
+  border: 1px solid black;
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  position:relative;
+  left: 20px;
+  top:-30px;
+}
