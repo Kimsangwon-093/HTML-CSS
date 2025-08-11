@@ -1,0 +1,76 @@
+.fieldset-bg-image{
+  position: relative;
+  background-position: center;
+  width: 400px; 
+  padding: 0;
+  margin: 0;
+  height: auto;
+  display: block;
+}
+
+.fieldset-bg-image::after{
+  background-image: url(wtf.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  content: "";
+  z-index: -1;
+}
+
+
+.legend-title{
+  color: magenta;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.required-sign::before{
+  content: '*';
+  color: red;
+}
+
+.input-box{
+  margin-bottom: 10px;
+}
+
+.txa-request-memo{
+width:300;
+height:400;
+
+}
+
+label{
+  vertical-align: top;
+}
+
+input, textarea{
+  background-color: transparent;
+}
+
+.focus-border:focus{
+  border: 3px solid red;
+}
+
+.chk-color-checked:checked + label{
+  color: red;
+}
+
+.btn-submit{
+  position: relative;
+}
+
+.btn-submit:hover::after{
+  content: '내용을 한 번더 확인해 주세요';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  top: 0;
+  left: 60px;
+}
